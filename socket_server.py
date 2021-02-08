@@ -27,7 +27,7 @@ def server_program():
         	data_send = "Hello, welcome"
         
         if flag == 0:
-        	data_send = input(' -> ')
+        	data_send = input('>>> ')
         else:
         	flag = 0
         
@@ -36,7 +36,5 @@ def server_program():
     conn.close()  # close the connection
 
 
-if __name__ == '__main__':
-    server_program()
+server_program()
     
-#https://www.journaldev.com/15906/python-socket-programming-server-client
